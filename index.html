@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa Baru Universitas Negeri Padang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('backgroundUNP.JPG'); 
+            background-size: cover;
+            background-position: center -50px; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: black; 
+        }
+
+        form {
+            width: 60%;
+            margin: auto;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+        }
+    </style>    
+</head>
+<body>
+    <img src="logoUNP.PNG" alt="Logo UNP" width="160">
+    <h2>Data Mahasiswa Baru Universitas Negeri Padang</h2>
+    <h3>Input Data Mahasiswa Baru</h3>
+
+    <form>
+        <table>
+            <tr><td>Nama</td><td><input type="text"></td></tr>
+            <tr><td>NIM</td><td><input type="text"></td></tr>
+            <tr><td>Tempat Lahir</td><td><input type="text"></td></tr>
+            <tr><td>Tanggal Lahir</td><td><input type="date"></td></tr>
+            <tr><td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-Laki
+                    <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr><td>Agama</td><td><input type="text"></td></tr>
+            <tr><td>Asal Sekolah</td><td><input type="text"></td></tr>
+            <tr><td>Alamat</td><td><input type="text"></td></tr>
+            <tr><td>Provinsi</td><td><input type="text"></td></tr>
+            <tr><td>Kabupaten/Kota</td><td><input type="text"></td></tr>
+            <tr><td>Kecamatan</td><td><input type="text"></td></tr>
+            <tr><td>Kelurahan/Nagari/Desa</td><td><input type="text"></td></tr>
+            <tr><td>Kode Pos</td><td><input type="text"></td></tr>
+            <tr><td>Fakultas</td>
+                <td>
+                    <select>
+                        <option>Pilih Fakultas</option>
+                        <option>Fakultas Teknik</option>
+                        <option>Fakultas Ekonomi</option>
+                        <option>Fakultas Ilmu Sosial</option>
+                        <option>Fakultas Pendidikan</option>
+                        <option>Fakultas Pariwisata dan Perhotelan</option>
+                        <option>Fakultas Matematika dan Ilmu Pengetahuan Alam</option>
+                        <option>Fakultas Kedokteran</option>
+                        <option>Fakultas Bahasa dan Seni</option>
+                        <option>Fakultas Ilmu Keolahragaan</option>
+                        <option>Fakultas Psikologi dan Kesehatan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td>Nomor Telepon</td><td><input type="text"></td></tr>
+            <tr><td>Email</td><td><input type="email"></td></tr>
+        </table>
+
+        <h3>Input Data Orang Tua</h3>
+        <table>
+            <tr><td>Nama Ayah</td><td><input type="text"></td></tr>
+            <tr><td>Pekerjaan Ayah</td>
+                <td>
+                    <select>
+                        <option>Pilih Pekerjaan</option>
+                        <option>PNS</option>
+                        <option>Swasta</option>
+                        <option>Wirausaha</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td>Penghasilan Ayah</td><td><input type="text"></td></tr>
+            <tr><td>Nomor Telepon Ayah</td><td><input type="text"></td></tr>
+            <tr><td>Nama Ibu</td><td><input type="text"></td></tr>
+            <tr><td>Pekerjaan Ibu</td>
+                <td>
+                    <select>
+                        <option>Pilih Pekerjaan</option>
+                        <option>PNS</option>
+                        <option>Swasta</option>
+                        <option>Wirausaha</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td>Penghasilan Ibu</td><td><input type="text"></td></tr>
+            <tr><td>Nomor Telepon Ibu</td><td><input type="text"></td></tr>
+            <tr><td>Rata-rata Penghasilan Per Bulan</td>
+                <td>
+                    <select>
+                        <option>Rata-rata</option>
+                        <option>< 1 Juta</option>
+                        <option>1 - 5 Juta</option>
+                        <option>> 5 Juta</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <button type="submit">Simpan</button>
+        <button type="reset">Reset</button>
+        <button type="button">Kembali</button>
+    </form>
+</body>
+</html>
